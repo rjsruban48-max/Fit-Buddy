@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}FitBuddy - Home{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+    <h2>Welcome to FitBuddy 💪</h2>
+
+    <p>
+        Create a simple personalized fitness plan with the help of AI.
+    </p>
+
+    <a class="button" href="{{ url_for('plan') }}">
+        Create My Fitness Plan
+    </a>
+</section>
+
+<section class="features">
+
+    <div class="card">
+        <h3>🏋️ Workout</h3>
+        <p>Get workout suggestions based on your fitness goal.</p>
+    </div>
+
+    <div class="card">
+        <h3>🎯 Goals</h3>
+        <p>Choose a goal and create a plan that matches it.</p>
+    </div>
+
+    <div class="card">
+        <h3>🤖 AI Powered</h3>
+        <p>FitBuddy is designed to generate personalized suggestions.</p>
+    </div>
+
+</section>
+
+{% endblock %}

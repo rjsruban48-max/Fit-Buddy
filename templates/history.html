@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}History - FitBuddy{% endblock %}
+
+{% block content %}
+
+<section class="history-section">
+
+    <h2>📋 Fitness Plan History</h2>
+
+    <p>Your previously generated plans will appear here.</p>
+
+    <div class="card">
+        <h3>No Plans Yet</h3>
+        <p>
+            You haven't created a fitness plan yet.
+            Go to the Plan page to create one.
+        </p>
+
+        <a class="button" href="{{ url_for('plan') }}">
+            Create a Plan
+        </a>
+    </div>
+
+</section>
+
+{% endblock %}
